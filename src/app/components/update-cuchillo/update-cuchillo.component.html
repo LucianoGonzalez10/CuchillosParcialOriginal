@@ -1,0 +1,67 @@
+<form [formGroup]="formulario" (ngSubmit)="actualizarCuchillo()">
+    <h1> Agregar Cuchillo </h1>
+
+    <label for="nombre"> Nombre: </label>
+    <input type="text" formControlName="nombre">
+    @if (formulario.controls['nombre'].getError('required') && formulario.controls['nombre'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <select formControlName="tipo">
+        <option value=""> Seleccione un tipo de cuchillo </option>
+        <option value="chef"> Chef </option>
+        <option value="santoku"> Santoku </option>
+        <option value="pan"> Pan </option>
+        <option value="deshuesador"> Deshuesador </option>
+        <option value="mondador"> Mondador </option>
+        <option value="fileteador"> Fileteador </option>
+        <option value="chino"> Chino </option>
+        <option value="caza"> Caza </option>
+    </select>
+    @if (formulario.controls['tipo'].getError('required') && formulario.controls['tipo'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <select formControlName="tipoFilo">
+        <option value=""> Seleccione un tipo de filo </option>
+        <option value="liso"> Liso </option>
+        <option value="dentado"> Dentado </option>
+    </select>
+    @if (formulario.controls['tipoFilo'].getError('required') && formulario.controls['tipoFilo'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <select formControlName="materialHoja">
+        <option value=""> Seleccione el material de la hoja </option>
+        <option value="acero inoxidable"> Acero inoxidable </option>
+        <option value="Acero al carbono"> Acero al carbono </option>
+        <option value="Ceramica"> Ceramica </option>
+    </select>
+    @if (formulario.controls['materialHoja'].getError('required') && formulario.controls['materialHoja'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <select formControlName="materialMango">
+        <option value=""> Seleccione el material del mango </option>
+        <option value="Madera"> Madera </option>
+        <option value="Metal"> Metal </option>
+        <option value="Plastico"> Plastico </option>
+        <option value="Hueso"> Hueso </option>
+    </select>
+    @if (formulario.controls['materialMango'].getError('required') && formulario.controls['materialMango'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <input type="number" formControlName="longitudHoja">
+    @if (formulario.controls['longitudHoja'].getError('required')) {
+        <p> El campo es requerido. </p>
+    }
+
+    <input type="number" formControlName="longitudTotal">
+    @if (formulario.controls['longitudTotal'].getError('required')) {
+        <p> El campo es requerido. </p>
+    }
+
+    <button> Actualizar Cuchillo </button>
+
+</form> 

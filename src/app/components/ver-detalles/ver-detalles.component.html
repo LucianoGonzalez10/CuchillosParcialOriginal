@@ -1,0 +1,12 @@
+<h1>Detalles del Cuchillo</h1>
+<div>
+  <p><strong>Id:</strong> {{ cuchillo.id }}</p>
+  <p><strong>Nombre:</strong> {{ cuchillo.nombre }}</p>
+  <p><strong>Tipo:</strong> {{ cuchillo.tipo }}</p>
+  <p><strong>Tipo de Filo:</strong> {{ cuchillo.tipoFilo }}</p>
+  <p><strong>Material de la Hoja:</strong> {{ cuchillo.materialHoja }}</p>
+  <p><strong>Material del Mango:</strong> {{ cuchillo.materialMango }}</p>
+  <p><strong>Longitud de la Hoja:</strong> {{ cuchillo.longitudHoja }} cm</p>
+  <p><strong>Longitud Total:</strong> {{ cuchillo.longitudTotal }} cm</p>
+</div>
+<button [routerLink]="['/lista-cuchillos']">Volver a la lista</button>

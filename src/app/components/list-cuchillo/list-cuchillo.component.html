@@ -1,0 +1,12 @@
+<h1> LISTA DE CUCHILLOS: </h1>
+<ul>
+    @for (item of listaCuchillos; track $index) {
+        <li>
+            <p> Id cuchillo: {{item.id}}</p>
+            <p>Nombre: {{item.nombre}}</p>
+            <button [routerLink]="['/verDetalles', item.id]"> Ver detalles </button>
+            <button [routerLink]="['/modificar', item.id]"> Modificar Cuchillo </button>
+            <button (click)="eliminarCuchillo(item.id)"> Eliminar Cuchillo </button>
+        </li>
+    }
+</ul>

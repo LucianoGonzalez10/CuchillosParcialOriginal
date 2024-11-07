@@ -1,0 +1,24 @@
+{
+  "cuchillos": [
+    {
+      "id": "1819",
+      "nombre": "Cuchillo",
+      "tipo": "chef",
+      "tipoFilo": "liso",
+      "materialHoja": "acero inoxidable",
+      "materialMango": "Madera",
+      "longitudHoja": 17,
+      "longitudTotal": 20
+    },
+    {
+      "nombre": "Lupo",
+      "tipo": "santoku",
+      "tipoFilo": "liso",
+      "materialHoja": "Acero al carbono",
+      "materialMango": "Metal",
+      "longitudHoja": 139,
+      "longitudTotal": 130,
+      "id": "2053"
+    }
+  ]
+}
